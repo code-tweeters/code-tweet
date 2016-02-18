@@ -1,7 +1,9 @@
 CodeTweet::Application.routes.draw do
 
+  devise_for :users
   #set up root route
   root 'tweets#index'
+  resources :tweets
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
