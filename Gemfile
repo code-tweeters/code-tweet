@@ -43,3 +43,6 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+# Use 12Factor for production asset service and Heroku error logging
+gem 'rails_12factor', group: :production
