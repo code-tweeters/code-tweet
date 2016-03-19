@@ -1,5 +1,6 @@
 language: ruby
 rvm:
 - 2.2.4
+install: ./install-dependencies.sh
 before_script:
 - psql -c 'create database code_tweet_test;' -U postgres  
