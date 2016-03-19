@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails code-tweet: test" uuid="4c27aa65-1ec6-4561-bb04-865fd7e40cf3">
+      <user-name>postgres</user-name>
+      <user-password>dfdadfcbdfd9dfd9dfdddfc5dfd8dfce</user-password>
+    </data-source>
+    <data-source name="Rails code-tweet: production" uuid="20bb5131-3faf-49d1-9f18-1ae2bd2c5b28">
+      <user-name>postgres</user-name>
+      <user-password>dfdadfcbdfd9dfd9dfdddfc5dfd8dfce</user-password>
+    </data-source>
+    <data-source name="Rails code-tweet: development" uuid="967bd9d5-564d-4158-ae0b-bd9ae79d1005">
+      <first-sync>true</first-sync>
+      <user-name>postgres</user-name>
+      <user-password>dfdadfcbdfd9dfd9dfdddfc5dfd8dfce</user-password>
+    </data-source>
+  </component>
+</project>
