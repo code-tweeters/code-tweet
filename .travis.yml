@@ -2,4 +2,4 @@ language: ruby
 rvm:
 - 2.2.4
 before_script:
-- psql -c 'create database code-tweet_test;' -U postgres  
+- psql -c 'create database code_tweet_test;' -U postgres  
