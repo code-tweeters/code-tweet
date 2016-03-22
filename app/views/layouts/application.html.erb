@@ -2,23 +2,27 @@
 <html>
 <head>
   <title>CodeTweet</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
   <nav class="navbar navbar-default background-nav">
-    <div class="container-fluid ">
+    <div class="container-fluid">
       <div class="row ">
-        <div class="row navbar-brand col-sm-4 ">
-          <a class="col-sm-offset-4" href="#">&lt/&gt</a>
+        <div class="row navbar-brand col-sm-4">
+          <a class="col-sm-offset-4" href="#"></a>
         </div>
         <h1 class="text-center col-sm-4">Code-tweet</h1>
         <ul class="col-sm-4 nav navbar-nav navbar-right">
           <div class="row">
-            <div class= "col-sm-4 col-sm-offset-6  margin-top">
-              <li ><a class="btn" href="#">Sign Up</a> &nbsp <a href="#">Login</a></li>
-              <li></li>
+            <div id="nav-links" class="col-sm-4 col-sm-offset-6 margin-top">
+              <% if user_signed_in? %>
+                <li><%= link_to 'Sign out', destroy_user_session_path, method: :delete %></li>
+              <% else %>  
+                <li><%= link_to 'Sign in', new_user_session_path %></li>
+                <li><%= link_to 'Sign up', new_user_registration_path %></li>
+              <% end %>  
             </div>
         </div>
         </ul>
