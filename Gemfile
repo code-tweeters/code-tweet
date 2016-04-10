@@ -54,3 +54,5 @@ gem 'simple_form'
 
 # Use Devise to create and manage users
 gem 'devise', '>=3.2.4'
+
+gem 'pry'
