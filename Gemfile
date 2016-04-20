@@ -55,4 +55,11 @@ gem 'simple_form'
 # Use Devise to create and manage users
 gem 'devise', '>=3.2.4'
 
+#Use Pry to assist in debugging
 gem 'pry'
+
+#Use OAuth to authenticate with Twitter API
+gem 'oauth'
+
+#Use Figaro to securely store API keys
+gem 'figaro', '>= 1.0.0'
