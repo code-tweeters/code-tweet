@@ -1,6 +1,7 @@
 CodeTweet::Application.routes.draw do
 
   devise_for :users
+  resources :dashboards, only: [:show]
   #set up root route
   root 'tweets#index'
   resources :tweets
